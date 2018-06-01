@@ -1,0 +1,99 @@
+header{
+
+    background-image: url("images/1.jpg");
+    background-repeat: no-repeat, repeat;
+    background-size: 100%;
+    background-position: relative;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo{
+    font-size: 60px;
+    color: Black;
+    font-weight: 400;
+}
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+
+    background-color: red;
+    display:flex;
+    justify-content: center;
+}
+
+nav li {
+    margin-left: 1px;
+    display: inline-block;
+
+}
+nav li a:hover:not(.active) {
+    background-color: black;
+}
+nav li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+
+}
+nav{
+  margin-bottom: 10px;
+
+}
+section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#container1, #container3 {
+  width:980px;
+  display:flex;
+  flex-direction: column;
+}
+#container2 {
+display: flex;
+flex-direction: column;
+align-items: center;
+
+}
+#rangee1  {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+
+#rangee2 {
+  display: flex;
+  justify-content: flex-start;
+}
+
+.marge {
+  margin-right: 15px;
+}
+
+
+section {
+  margin-top: 80px;
+}
+
+#googlemaps {
+width:100%;
+margin-top: 50px;
+margin-bottom: 50px;
+}
+#soustitre2 {
+  width:980px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+imagegauche {
+  height:380px;
+  width:480px
+}
