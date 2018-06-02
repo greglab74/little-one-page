@@ -5,11 +5,18 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="reset.css">
   <link rel="stylesheet" href="style.css">
-
+  <style>
+  .sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  }
+  </style>
   <title>Little-one-page</title>
 </head>
 
 <body>
+
 
 
   <header>
@@ -18,8 +25,9 @@
       <p id="soustitre">Les grands chelems</p>
     </div>
   </header>
-  <nav>
-    <ul>
+
+  <nav id="nav">
+    <ul class="ex1">
       <li>
         <a href="#Australian" class="marge">Australian Open</a>
       </li>
@@ -170,7 +178,28 @@
 
           </footer>
 
+          <script>
+          // When the user scrolls the page, execute myFunction
+          window.onscroll = function() {myFunction()};
+
+          // Get the header
+          var header = document.getElementById("nav");
+
+          // Get the offset position of the navbar
+          var sticky = header.offsetTop;
+
+          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
+          function myFunction() {
+          if (window.pageYOffset >= sticky) {
+            header.classList.add("sticky");
+          } else {
+            header.classList.remove("sticky");
+          }
+          }
+          </script>
 
 
         </body>
+
+
         </html>
