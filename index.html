@@ -11,7 +11,14 @@
 
 <body>
 
-
+<style>
+var iconBase = 'https://maps.google.com/mapfiles/kml/shapes/';
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    icon: iconBase + './images/federerhead.png'
+  });
+  </style>
 
   <header>
     <div id="banniere">
@@ -43,17 +50,16 @@
         </div>
         <div id="roger">
           <ul>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p class="fontroger">Magicien</p></li>
-          </ul>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
         </div>
       </div>
     </div>
@@ -84,19 +90,19 @@
           <form method="post" action="traitement.php">
             <fieldset >
               <span class="far fa-id-badge" font-color="red"></span>
-              <input type="text" name="nom" placeholder="Full Name" style="border:0px" rows="1"/>
+              <input class="marge" type="text" name="nom" placeholder="Full Name" style="border:0px" rows="1" size="30"/>
             </fieldset>
             <fieldset>
               <span class="far fa-envelope"></span>
-              <input type="email" name="mail" placeholder="Eg example@email.com" style="border:0px" rows="1"/>
+              <input class="marge" type="email" name="mail" placeholder="Eg example@email.com" style="border:0px" rows="1" soze="30"/>
             </fieldset>
             <fieldset>
               <span class="fas fa-mobile-alt"></span>
-              <input type="tel" name="portable" placeholder="Eg +1 800 000000" style="border:0px" rows="1"/>
+              <input class="marge" type="tel" name="portable" placeholder="Eg +1 800 000000" style="border:0px" rows="1" size="30"/>
             </fieldset>
             <fieldset id="zonetexte">
               <span class="far fa-comment"></span>
-              <textarea name="zonedetexte" id="zone" placeholder="Your comments...." style="border:0px" rows="1"></textarea>
+              <textarea class="marge" name="zonedetexte" id="zone" placeholder="Your comments...." style="border:0px" rows="5" cols="24"></textarea>
             </fieldset>
             <input class="submit" type="submit" value="SEND NOW" />
           </form>
@@ -106,7 +112,7 @@
 
   </section>
   <footer>
-    <a href="#"><i class="fab fa-facebook fa-3x"></i>
+    <a href="#"><i class="fab fa-facebook-f fa-3x"></i>
       <a href="#"><i class="fab fa-twitter fa-3x"></i>
         <a href="#"><i class="fab fa-instagram fa-3x"></i>
           <a href="#"><i class="fab fa-youtube fa-3x"></i>
