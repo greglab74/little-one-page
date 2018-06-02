@@ -9,63 +9,8 @@
   <title>Little-one-page</title>
 </head>
 
+<body>
 
-
-  <body onload="_init();">
-          <!-- C'est dans cette div#map que la carte sera contenue -->
-          <div id="map"></div>
-
-          <script>
-          var map;
-
-          /**
-           * Initialisation du script Google Maps
-          */
-          function _init()
-          {
-              // Insertion du script Google Maps + Création map
-              var script = document.createElement("script");
-              script.type = "text/javascript";
-              script.src = "http://maps.googleapis.com/maps/api/js?key={{AIzaSyDMeLNe07FLlrxq0EHCYWkcMZ8xaL2LTQ8}}&sensor=false&callback=_initMap";
-              document.body.appendChild(script);
-          }
-
-          /**
-           * Initialisation de la map
-          */
-          function _initMap()
-          {
-              // Options de la map
-              var mapOptions = {
-                  zoom: 12,
-                  center: new google.maps.LatLng(48.858927, 2.294254),
-                  mapTypeId: google.maps.MapTypeId.ROADMAP
-              };
-
-              map = new google.maps.Map(document.getElementById('map'), mapOptions);
-          }
-
-          //--> Configuration de l'icône personnalisée
-var image = {
-    // Adresse de l'icône personnalisée
-    url: 'images/federerhead.png',
-    // Taille de l'icône personnalisée
-    size: new google.maps.Size(25, 40),
-    // Origine de l'image, souvent (0, 0)
-    origin: new google.maps.Point(0,0),
-    // L'ancre de l'image. Correspond au point de l'image que l'on raccroche à la carte. Par exemple, si votre îcone est un drapeau, cela correspond à son mâts
-    anchor: new google.maps.Point(0, 20)
-};
-
-//--> Insertion du marker avec l'ajout de l'icône
-var marker = new google.maps.Marker({
-    position: new google.maps.LatLng(48.858927, 2.294254),
-    map: map,
-    title:"Hello World !",
-    // On définit l'icône de ce marker comme étant l'image définie juste au-dessus
-    icon: image
-});
-          </script>
 
   <header>
     <div id="banniere">
@@ -157,6 +102,64 @@ var marker = new google.maps.Marker({
       </div>
     </div>
 
+<!--
+    <body onload="_init();">
+
+            <div id="map"></div>
+
+            <script>
+            var map;
+
+            /**
+             * Initialisation du script Google Maps
+            */
+            function _init()
+            {
+                // Insertion du script Google Maps + Création map
+                var script = document.createElement("script");
+                script.type = "text/javascript";
+                script.src = "http://maps.googleapis.com/maps/api/js?key={{AIzaSyDMeLNe07FLlrxq0EHCYWkcMZ8xaL2LTQ8}}&sensor=false&callback=_initMap";
+                document.body.appendChild(script);
+            }
+
+            /**
+             * Initialisation de la map
+            */
+            function _initMap()
+            {
+                // Options de la map
+                var mapOptions = {
+                    zoom: 12,
+                    center: new google.maps.LatLng(48.858927, 2.294254),
+                    mapTypeId: google.maps.MapTypeId.ROADMAP
+                };
+
+                map = new google.maps.Map(document.getElementById('map'), mapOptions);
+            }
+
+            Configuration de l'icône personnalisée
+    var image = {
+      // Adresse de l'icône personnalisée
+      url: 'images/federerhead.png',
+      // Taille de l'icône personnalisée
+      size: new google.maps.Size(25, 40),
+      // Origine de l'image, souvent (0, 0)
+      origin: new google.maps.Point(0,0),
+      // L'ancre de l'image. Correspond au point de l'image que l'on raccroche à la carte. Par exemple, si votre îcone est un drapeau, cela correspond à son mâts
+      anchor: new google.maps.Point(0, 20)
+    };
+
+    Insertion du marker avec l'ajout de l'icône
+    var marker = new google.maps.Marker({
+      position: new google.maps.LatLng(48.858927, 2.294254),
+      map: map,
+      title:"Hello World !",
+      // On définit l'icône de ce marker comme étant l'image définie juste au-dessus
+      icon: image
+    });
+            </script>
+
+-->
   </section>
   <footer>
     <a href="#"><i class="fab fa-facebook-f fa-3x"></i>
