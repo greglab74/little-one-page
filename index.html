@@ -2,6 +2,8 @@
 <html>
 <head>
   <meta charset="UTF-8">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.13/css/all.css" integrity="sha384-DNOHZ68U8hZfKXOrtjWvjxusGo9WQnrNx2sqG0tfsghAvtVlRW3tvkXWZh58N9jp" crossorigin="anonymous">
   <link rel="stylesheet" href="css/reset.css">
   <link rel="stylesheet" href="css/style.css">
@@ -55,16 +57,16 @@
         </div>
         <div id="roger">
           <ul>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
-            <li><img src="css/images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
+            <li><img src="images/federer.jpg" class="marge" width="150px" height="150px"><p class="fontroger">Roger Federer</p><p>Magicien des courts</p></li>
         </div>
       </div>
     </div>
@@ -183,27 +185,9 @@
 
           </footer>
 
-          <script>
-          // When the user scrolls the page, execute myFunction
-          window.onscroll = function() {myFunction()};
 
-          // Get the header
-          var header = document.getElementById("nav");
-
-          // Get the offset position of the navbar
-          var sticky = header.offsetTop;
-
-          // Add the sticky class to the header when you reach its scroll position. Remove "sticky" when you leave the scroll position
-          function myFunction() {
-          if (window.pageYOffset >= sticky) {
-            header.classList.add("sticky");
-          } else {
-            header.classList.remove("sticky");
-          }
-          }
-          </script>
-
-
+<script src="js/stickynav.js"></script>
+<script src="js/smoothscroll.js"></script>
         </body>
 
 
