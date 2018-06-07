@@ -5,13 +5,14 @@
 }
 html {
   font-family: 'Trebuchet MS', 'sans-serif' ;
+  font-size: 62.5%;
 }
 
 
 /**********************************HEADER****************************************/
 header{
 
-    background-image: url("../images/grandslam2.jpg");
+    background-image: url("images/grandslam2.jpg");
     background-repeat: no-repeat, repeat;
     width:100%;
     min-height: 300px;
@@ -23,25 +24,26 @@ header{
     /**********************************BANNIERE****************************************/
     h1 {
       text-align: center;
-      font-size: 3.75rem;
+      font-size: 6rem;
       color: #FF9933;
     }
     h2 {
-      font-size: 2.25rem;
+      font-size: 3.6rem;
+
     }
     #soustitre {
       text-align: center;
       color: #FF9933;
-      font-size: 2.25rem;
+      font-size: 3.6rem;
     }
     p {
-      font-size: 1rem;
+      font-size: 1.6rem;
       text-align: justify;
       margin-top: 25px;
       margin-bottom: 10px;
     }
     .fontroger {
-      font-size: 1.125rem;
+      font-size: 1.8rem;
       font-weight: bold;
       margin-bottom: 2px;
     }
@@ -74,7 +76,7 @@ header{
         padding: 14px 16px;
         text-decoration: none;
         width:180px;
-        font-size: 1.375rem;
+        font-size: 2.2rem;
 
     }
     nav li .marge {
@@ -143,7 +145,7 @@ height:180px;
   margin-bottom: 25px;
 }
 
-fieldset {
+.cadre {
   display: flex;
   border-width:2px;
   border-color: grey;
@@ -169,7 +171,7 @@ flex-direction: column;
 justify-content: center;
 }
 form .far, form .fas  {
-  font-size: 2rem;
+  font-size: 3.2rem;
   color:grey;
 }
 .submit {
@@ -181,18 +183,22 @@ form .far, form .fas  {
   align-self: center;
   transition: 0.5s;
   font-weight: bold;
+
+  box-shadow: 2px 10px 25px 0 #198CFF;
 }
-fieldset .marge {
-  font-size: 1.5rem;
+.cadre .marge {
+  font-size: 2.4rem;
   opacity: 0.5;
   margin-left: 60px;
 }
-fieldset .far,fieldset .fas {
+.cadre .far, .cadre .fas {
   position: absolute;
   margin-left: 15px;
 }
 textarea {
   margin-top: 10px;
+  font-family: 'Trebuchet MS', sans-serif;
+  font-size:2.4rem;
 }
 #zonetexte .far {
   margin-top:10px;
@@ -233,7 +239,7 @@ footer a {
     display: none;
   }
   p {
-    font-size: 0.8rem;
+    font-size: 1.3rem;
   }
   #imagegauche {
     display: none;
@@ -253,7 +259,7 @@ footer a {
     width:300px;
     height: 300px;
   }
-  fieldset {
+  .cadre {
     width:400px;
 
   }
