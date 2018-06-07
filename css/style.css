@@ -266,5 +266,8 @@ footer a {
 	#formulaire {
 		width:100%;
 	}
+	form {
+		width:30%;
+	}
 }
 
